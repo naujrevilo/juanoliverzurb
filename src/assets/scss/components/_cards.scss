@@ -1,0 +1,23 @@
+.grid-container {
+  //background: #FAFDFF;
+  grid-gap: 0.5em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding-top: 1em;
+}
+
+.card-divider{
+  background-color: white;
+}
+.card-divider h4{
+  color: $primary-color;
+}
+
+.card__thumbnail{
+  text-align: center;
+  border: none;
+}
+
+a.thumbnail{
+  box-shadow: none;
+}

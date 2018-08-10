@@ -1,0 +1,169 @@
+---
+layout: index
+meta-title: Detección de intrusos en redes inalámbricas. Características, el despliegue y desventajas
+---
+<div class="hero-section articulo deteccion hide-for-small-only">
+    <div class="hero-section-text">
+        <h1>Detección de intrusos en redes inalámbricas. Características, el despliegue y desventajas</h1>
+    </div>
+</div>
+
+<article class="article">
+    <header class="header">
+        <div class="category">Categoría: Seguridad informática</div>
+        <h1 class="show-for-small-only">Detección de intrusos en redes inalámbricas. Características, el despliegue y desventajas</h1>
+        <div class="meta">
+            <span class="author">by <span class="author-name">Juan Oliver</span></span>
+            <span class="pub-date">Publicado el 08 de agosto de 2018</span>
+        </div>
+    </header>
+
+    <p>Es común creer que las redes inalámbricas son mejores que las redes LAN normales, tal vez porque nos permiten poder trasladarnos dentro del rango de operación de la red y hacer las mismas tareas de compartir archivos y otros recursos con los otros miembros de la wireless, sin embargo toda tecnología conlleva sus riesgos y la WLAN no es la excepción.
+        Tal vez se tiene la creencia errada de que el único riesgo que tenemos al usar las redes inalámbricas consiste en que nos roben la señal y la conexión, normalmente a internet, se vuelva más lenta, sin embargo los riesgos existentes en este tipo de comunicaciones son los mismos que los que tiene una LAN normal.
+    </p>
+
+    <h2>Riesgos de las redes inalámbricas</h2>
+    <p>Teniendo en cuenta que la detección de intrusos se da entre otras razones por la falta de una herramienta que vigile el tráfico de red, esto conlleva la generación de riesgos para nuestra infraestructura de red, ya que, al darse una intrusión todos nuestros recursos están expuestos a merced del atacante el cual puede obtener información sensible, cambiar datos, cambiar configuraciones, entre otras actividades ilícitas. El hecho de que el rango de cobertura de una señal de red inalámbrica sea corto y que una persona no tenga acceso a esta si no está dentro de ese rango de cobertura no quiere decir que dicha red esté exenta de intentos de intrusión, sin embargo, se pueden establecer medidas que eviten que personas ajenas a la WLAN tengan acceso implementando sensores de proximidad que verifiquen que los dispositivos que se están conectando o intentando conectar son los autorizados dentro de las políticas de la empresa, en caso contrario debe evitar dicha conexión. Además de estos sensores se debe contar con IDS que vigilen el tráfico y alerten sobre paquetes anormales en caso de que alguien pueda burlar la seguridad y logre conectarse a la red desde un dispositivo no autorizado.
+        Como se dijo anteriormente, los riesgos de las redes WLAN son realmente los mismos de una LAN, ya que, los protocolos son los mismos, las actividades son las mismas, los equipos son los mismos y las aplicaciones son las mismas. Teniendo esto en cuenta la vigilancia y las medidas de seguridad deben ser las mismas o incluso mejores, teniendo en cuenta que no se necesita estar en un sitio fijo para tener conectividad y el atacante puede estar moviéndose dentro del rango de la WLAN.
+    </p>
+    <h2>Arquitectura WLAN</h2>
+    <p>No existe un estándar establecido a nivel mundial que nos indique como debe ser la arquitectura de una WLAN, sin embargo los distintos fabricantes de dispositivos de red hacen sus respectivas recomendaciones. Por la aceptación de los dispositivos Cisco, seleccionamos la siguiente topología propuesta por esta empresa para mostrar una posible arquitectura de implantación de una WLAN:</p>
+
+    <figure>
+        <img src="../../assets/img/seguridadwlan.png" height="164" width="416"/>
+        <figcaption><strong>Figura 1.</strong> Secure Wireless Topology. (Cisco Systems, Inc 2008).</figcaption>
+    </figure>
+
+    <p>
+        Cisco en esta topología propuso la encripción de la comunicación entre el cliente WLAN y el Access Point y de este al controlador WALN haciendo uso de autenticación y del protocolo LWAPP (Light Weight Access Point Protocol). Se entiende que la conexión entre el controlador y el servidor de autenticación es haciendo uso del canal de radio.
+    </p>
+
+    <h2>Ventajas de las redes inalámbricas</h2>
+
+    <ul>
+        <li>
+            Estar Basada en estándares y contar con certificación Wi-Fi: El Wi-Fi es un estándar para dispositivos de redes inalámbricas por lo cual, los usuarios contaran con un mercado amplio de dispositivos compatibles gracias a este estándar WI-FI.
+        </li>
+        <li>
+            Instalación simple:  teniendo en cuenta que los dispositivos de red están basados en el estándar WI-FI significa que conectar varios dispositivos de este tipo se hace fácil para el usuario y no representa mayor problema para cualquier tipo de usuario que quiera tener su WLAN
+        </li>
+        <li>
+            Disponibilidad: Gracias a la facilidad de uso de los dispositivos de red inalámbricos es posible colocar varios dispositivos cada cierta distancia permitiendo de esta manera que los usuarios se puedan trasladar dentro del rango de acción de estos dispositivos sin perder conectividad de esta forma los servicios siempre van a estar disponibles.
+        </li>
+        <li>
+            Escalabilidad: la escalabilidad nos permite poder conectar nuevos dispositivos a nuestra WLAN sin tener que hacer cambios significativos en la infraestructura gracias a la compatibilidad establecida por el estar WI-FI
+        </li>
+    </ul>
+
+    <h2>Desventajas de las redes inalámbricas</h2>
+
+    <p>Inicialmente las WLAN tenían muchos inconvenientes para ser aceptados por la comunidad, estos inconvenientes han sido subsanados con el paso del tiempo, sin embargo todavía existen factores que hacen que las redes inalámbricas sean inferiores en algunos aspectos a las redes cableadas.
+        Ya vimos las ventajas de implementar una WLAN en nuestra empresa y/u oficina. A continuación veamos algunas desventajas de utilizar este tipo de redes:
+        <ul>
+            <li>
+                Calidad de Servicio: Teniendo en cuenta las velocidades y estabilidad de las redes cableadas, las redes inalámbricas están por debajo de las características de las LAN, desde el punto de vista de velocidad, estabilidad e interferencias.
+            </li>
+        </ul>
+    </p>
+    <h2>Sistema de Detección de intrusos en Redes Inalámbricas (WIDS)</h2>
+    <p>En el mundo actual, cada vez más inalámbrico, las organizaciones se están dando cuenta de los beneficios en cuanto a seguridad de hacer un seguimiento constante del espectro inalámbrico dentro de su empresa. Cuando una organización tiene un interés en la identificación y localización de hardware inalámbrico y la prevención de los intentos de intrusión en sus redes, los beneficios de la vigilancia que existen, independientemente de si son o no propietarios de la red oficial al autorizar el uso de dispositivos inalámbricos, son reales.
+        Un sistema inalámbrico 802.11 de detección de intrusiones (WIDS) consiste en un grupo de sensores y una unidad central que trabajan juntos para proporcionar supervisión del espectro inalámbrico 24/7. Idealmente, la información entre los sensores y el controlador pasará a través de una red independiente dedicada a los WIDS, pero es una opción aceptable conectar los sensores en una red LAN virtual establecida por la red de datos.
+
+    <h2>Políticas de seguridad (Recomendaciones)</h2>
+    <p>Algunas políticas de seguridad que se deben tener en cuenta e implementar a la hora de tener una WLAN pueden ser las siguientes:</p>
+    <ul>
+        <li>
+            Verificar que todas las comunicaciones a través de la WLAN sean encriptadas. De nos ser así, el WIDS debe alertar sobre esa anomalía. Para que se cumpla esta política, el WIDS debe tener la regla que evalúe dicha característica.
+        </li>
+        <li>
+            Configurar el WIDS para que detecte cuando un dispositivo no autorizado se conecte o intente conectarse a nuestra WLAN, de esta manera podrá alertar sobre dicha actividad sospechosa.
+        </li>
+        <li>
+            Limitar la conectividad a nuestra WLAN configurando las MAC autorizadas para conectarse.
+        </li>
+        <li>
+            Cancelar los puertos que no se empleen.
+        </li>
+        <li>
+            Mejorar la autenticación de usuarios haciendo uso de WPA2. En un futuro cercano contaremos con el nuevo metodo de autenticación llamado WPA3.
+        </li>
+        <li>
+            Controlar la intensidad de la señal, de modo que sea más difícil conectarse desde el exterior de las instalaciones de la empresa/hogar.
+        </li>
+        <li>
+            Hacer uso de hardware y software de seguridad (IDS, IPs, Firewall), que cumpla con los estándares de alertas, notificaciones y reportes, como CVE, OWASP, etc.
+        </li>
+        <li>
+            Inhabilitar DHCP para la red inalámbrica. Usar direcciones IP fijas.
+        </li>
+        <li>
+            Ocultar el SSID.
+        </li>
+        <li>
+            Inhabilitar el broadcast del SSID.
+        </li>
+        <li>
+            Utilizar IPSec y VPN.
+        </li>
+    </ul>
+    <h2>Las desviaciones de la Política de Seguridad</h2>
+    <p>
+        El administrador del sistema puede crear una política de seguridad inalámbrica y presionar esa política a los dispositivos autorizados. Los WIDS pueden monitorear el espacio aéreo y hacer cumplir la política de seguridad. Por ejemplo, los WIDS pueden determinar si un dispositivo autorizado es:
+    </p>
+
+    <ul>
+        <li>
+            Conectar a, o intentar una conexión a un dispositivo no autorizado.
+        </li>
+        <li>
+            No utilizar el cifrado o el método de autenticación adecuada.
+        </li>
+        <li>
+            No opera dentro de un lugar físico aprobado.
+        </li>
+        <li>
+            Al operar en un ad-hoc o modo de puente.
+        </li>
+        <li>
+            Operar en el canal equivocado.
+        </li>
+    </ul>
+    <h2>Ataques de denegación de servicio</h2>
+    <p> Los WIDS identifican un ataque de denegación de servicio mediante la detección de anomalías en el tráfico o las desviaciones de los protocolos 802.11 y los compara con un conjunto conocido de firmas de ataques. Cuando se detecta un ataque, el sistema registra el incidente y lo notifica al administrador del sistema. Como nuevos ataques de DoS son descubiertos, nuevas firmas se añaden a los WIDS.</p>
+
+    <h2>Los puntos de acceso maliciosos</h2>
+    <p>
+        Pueden ser conectados a la red o existir fuera de la red. Los puntos de acceso maliciosos en la red son los dispositivos no autorizados conectados por una información privilegiada que, o bien no representa riesgo a la red, es decir, entiende el riesgo y sin ninguna mala intención viola la política de todos modos, o maliciosamente se conecta a la AP con el único fin de obtener acceso remoto a la red para sí o para otra persona.
+    </p>
+    <p>
+        Un rogue AP no está físicamente conectado a la red, son puntos de acceso autorizados para suplantación de identidad. Los rogue tratan de hacer que los clientes autorizados se conecten a ellos con la intención de comprometer el cliente o el acceso a la red. Un WIDS sabe cuales son los puntos de acceso en el espacio aéreo circundante, y puede distinguir entre puntos autorizados y puntos no autorizados. El uso de técnicas de geolocalización pueden ser usadas para informar la ubicación física del dispositivo no autorizado con el fin de que el administrador del sistema pueda encontrar y eliminar el dispositivo de la red.
+    </p>
+
+    <h2>Defensa en profundidad</h2>
+
+    <p>
+        Los IDS se centran en las redes cableadas convencionales, por lo que vigilan las cinco (5) capas superiores del modelo OSI, mientras que el WIDS monitorea las capas 1 y 2. Debido a que un IDS de red concentra sus esfuerzos en clave de entrada y salida por el cable a la red, no tiene conocimiento de ningún ataque en los dispositivos inalámbricos conectados a la red. Por otro lado, hay muchos ataques de red cableada que un WIDS no puede detectar, por lo que los dos sistemas IDS en realidad se complementan entre sí y deben ser desplegados juntos.
+    </p>
+
+    <p>
+        En resumen, desplegar un WIDS no solo es una buena idea para proteger a cualquier red de ordenadores, el Departamento de Defensa en su la directiva 8100.2 y su seguimiento en los mandatos de la política de la utilización de un WIDS en todas las redes no clasificadas del Departamento de Defensa de área local inalámbrica para proporcionar escaneo continuo (24 horas al día, 7 días / semana) del espectro de radiofrecuencia para la intrusión inalámbrica y la denegación de servicio, intenta independientemente de si un sistema de telefonía móvil no está desplegado. Los sistemas inalámbricos de detección de intrusos son un componente de seguridad esencial para cualquier red, incluso para la protección de las redes cableadas, cuando el uso de hardware inalámbrico no está autorizado.
+    </p>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 2018 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:970px;height:250px"
+         data-ad-client="ca-pub-6323652906385212"
+         data-ad-slot="2052154717"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="fb-share-button" data-href="https://juanoliver.net//blog/deteccion_de_intrusos_redes_WiFi.html" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjuanoliver.net%2Fblog%2Fdeteccion_de_intrusos_redes_WiFi.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a>
+    </div>
+    <div class="twitter">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-hashtags="SECNAR" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div id="disqus_thread"></div>
+</article>

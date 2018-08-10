@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2db70612-9e82-4cbb-926e-362305f736b0" name="juanoliver.net" url="https://juanoliver.net">
+        <fileTransfer host="juanoliver.net" port="22" rootFolder="/home/juigon" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

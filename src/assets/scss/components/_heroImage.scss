@@ -1,0 +1,112 @@
+
+$hero-height: 100vh;
+
+.hero-section.inicio {
+  background: url('../img/bannerInicio.png') 50% no-repeat fixed;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .hero-section-text {
+	color: $white;
+	text-shadow: 1px 1px 2px $black;
+  }
+}
+
+.hero-section.servicios {
+  background: url('../img/bannerServicios.jpg') 50% no-repeat fixed;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-section-text {
+	color: $white;
+	text-shadow: 1px 1px 2px $black;
+  }
+}
+
+.hero-section.nosotros {
+  background: url('../img/bannerNosotros.jpg') 50% no-repeat fixed;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-section-text {
+    color: $white;
+    text-shadow: 1px 1px 2px $black;
+  }
+}
+
+.hero-section.contacto {
+  background: url('../img/bannerContacto.png') 50% no-repeat fixed;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .hero-section-text {
+    color: $white;
+    text-shadow: 1px 1px 2px $black;
+  }
+}
+
+.hero-section.blog {
+  background: url('../img/bannerBlog.png') 50% no-repeat fixed;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .hero-section-text {
+    color: $white;
+    text-shadow: 1px 1px 2px $black;
+  }
+}
+
+.hero-section.articulo.deteccion {
+  background: url('../img/blog_intruso.jpg') 50% no-repeat fixed;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .hero-section-text {
+    color: $white;
+    text-shadow: 1px 1px 2px $black;
+  }
+}
+
+.hero-section.articulo.juice {
+  background: url('../img/blog_juicejacking.png') 50% no-repeat fixed;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .hero-section-text {
+    color: $white;
+    text-shadow: 1px 1px 2px $black;
+  }
+}

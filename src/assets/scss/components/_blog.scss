@@ -1,0 +1,177 @@
+.article-row-section {
+  @include flex-grid-row(null, $global-width, 12);
+  justify-content: center;
+}
+
+.article-row-section-inner {
+  @include flex-grid-column(12);
+
+  @include breakpoint(medium) {
+    @include flex-grid-column(10);
+  }
+}
+
+.article-row-section-header {
+  padding: 1.5rem 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.article-row {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $light-gray;
+  padding: 1.5rem 0;
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+  }
+}
+
+.article-row-img img {
+  width: 100%;
+
+  @include breakpoint(medium) {
+    max-width: none;
+    width: auto;
+  }
+}
+
+.article-row-content {
+  padding: 1.5rem 0 0;
+  color: $body-font-color;
+
+  @include breakpoint(medium) {
+    padding: 0 0 0 1.5rem;
+  }
+}
+
+.article-row-content-header {
+  font-size: 1.5rem;
+}
+
+.article-row-content-description {
+  font-size: 1.25rem;
+}
+
+.article-row-content-author,
+.article-row-content-time {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  color: $dark-gray;
+}
+
+.article-row-reversed {
+  .article-row-content {
+    order: 2;
+    padding: 0 1.5rem 0 0;
+  }
+
+  .article-row-img {
+    order: 1;
+    padding: 0 0 1.5rem 0;
+  }
+
+  @include breakpoint(medium) {
+    .article-row-content {
+      order: 1;
+    }
+
+    .article-row-img {
+      order: 2;
+    }
+  }
+}
+
+.front_blog{
+  height: 200px;
+  width: 200px;
+}
+
+//Articulos
+
+/*
+ * This is an example built for a Thinkful office hour
+ * showcasing the stuff you'd want in a "minimal" / minimalist
+ * blog template.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  /* Unitless == good */
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.category {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffaa44;
+}
+
+.article {
+  width: 100%; /* default */
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 30px;
+}
+
+.meta {
+}
+
+.author {
+  display: inline-block;
+  background-color: #ffaa44;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin-right: 15px;
+}
+
+.pub-date {
+  line-height: 1;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+}
+
+h1 {
+  font-size: 2.232em; /* line-height: 3 * 1.75 em; */
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.826em;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.494em;
+  line-height: 1.2;
+}
+
+
+figure {
+  padding: 0;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+.fb-share-button, .twitter{
+  padding-bottom: 1em;
+}

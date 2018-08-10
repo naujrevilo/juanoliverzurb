@@ -1,0 +1,39 @@
+footer{
+  grid-area: footer;
+  background-color: #2980B9;
+  color: #ECF0F1;
+  text-align: center;
+  bottom: 0;
+  width: 100vw;
+
+  .espacio:before {
+    margin-right: .3em;
+    margin-left: .3em;
+  }
+  a{
+    color: #ECF0F1;
+
+    &:hover{
+      color: get-color(warning);
+    }
+  }
+
+  .footer{
+    padding: 0;
+  }
+
+  img .logo{
+    text-align: left;
+  }
+}
+
+/* unvisited link */
+a:link {
+  color: #ECF0F1;
+}
+
+
+/* selected link */
+a:active {
+  color: yellow;
+}
