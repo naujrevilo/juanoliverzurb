@@ -1,7 +1,7 @@
 $hero-height: 100vh;
 
 .hero-section.inicio {
-  background: url('../img/bannerInicio.png') 50% no-repeat fixed;
+  background: url('/assets/img/bannerInicio.png') 50% no-repeat fixed;
   background-size: cover;
   height: $hero-height;
   text-align: center;
@@ -18,7 +18,7 @@ $hero-height: 100vh;
 
 
 .hero-section.servicios {
-  background: url('../img/bannerServicios.jpg') 50% no-repeat fixed;
+  background: url('/assets/img/bannerServicios.jpg') 50% no-repeat fixed;
   background-size: cover;
   height: $hero-height;
   text-align: center;
@@ -33,7 +33,7 @@ $hero-height: 100vh;
 }
 
 .hero-section.nosotros {
-  background: url('../img/bannerNosotros.jpg') 50% no-repeat fixed;
+  background: url('/assets/img/bannerNosotros.jpg') 50% no-repeat fixed;
   background-size: cover;
   height: $hero-height;
   text-align: center;
@@ -48,7 +48,7 @@ $hero-height: 100vh;
 }
 
 .hero-section.contacto {
-  background: url('../img/bannerContacto.png') 50% no-repeat fixed;
+  background: url('/assets/img/bannerContacto.png') 50% no-repeat fixed;
   background-size: cover;
   height: $hero-height;
   text-align: center;
@@ -64,7 +64,7 @@ $hero-height: 100vh;
 }
 
 .hero-section.blog {
-  background: url('../img/bannerBlog.png') 50% no-repeat fixed;
+  background: url('/assets/img/banner_Blog.png') 50% no-repeat fixed;
   background-size: cover;
   height: $hero-height;
   text-align: center;
@@ -80,7 +80,7 @@ $hero-height: 100vh;
 }
 
 .hero-section.articulo.deteccion {
-  background: url('../img/blog_intruso.jpg') 50% no-repeat fixed;
+  background: url('/assets/img/blog_intruso.jpg') 50% no-repeat fixed;
   background-size: cover;
   height: $hero-height;
   text-align: center;
@@ -96,7 +96,7 @@ $hero-height: 100vh;
 }
 
 .hero-section.articulo.juice {
-  background: url('../img/banner_juicejacking.png') 50% no-repeat fixed;
+  background: url('/assets/img/banner_juicejacking.png') 50% no-repeat fixed;
   background-size: cover;
   height: $hero-height;
   text-align: center;
