@@ -1,0 +1,88 @@
+---
+layout: index
+meta-title: Faxploit - el error de las impresoras HP OfficeJet pone en riesgo toda la red
+categoría: Seguridad informática
+fecha: 14 de agosto de 2018
+---
+
+<div class="hero-section articulo faxploit hide-for-small-only">
+    <div class="hero-section-text">
+        <h1>{{meta-title}}</h1>
+    </div>
+</div>
+
+<div class="callout alert">
+    <h2>Advertencia</h2>
+    <p>Siempre recomendamos que cualquiera de las actividades descritas haya sido aprobada explícitamente por el (los) objetivo (s) dentro del alcance de una prueba de penetración autorizada y que lleve consigo una copia de una carta de autorización en todo momento.</p>
+    <p>Toda la información proporcionada en este sitio es solo para fines educativos. El sitio y los autores del sitio web no son responsables en ningún caso del uso indebido de la información.</p>
+</div>
+
+<article class="article">
+    <header class="header">
+        <div class="category">Categoría: {{categoría}}</div>
+        <h1 class="show-for-small-only">{{meta-title}}</h1>
+        <div class="meta">
+            <span class="author">by <span class="author-name">Juan Oliver</span></span>
+            <span class="pub-date">Publicado el {{fecha}}</span>
+        </div>
+    </header>
+
+    <p>
+        Las fallas críticas en millones de impresoras HP OfficeJet permitirán a los atacantes tomar el control de las impresoras que potencialmente las utilizan como un trampolín hacia la red a la que están conectadas.
+    </p>
+
+    <figure>
+        <img src="../assets/img/interno_blog_infraestructura_red.jpg" height="164" width="416"/>
+        <figcaption class="text-center"><strong>Figura 1.</strong> Estándar de TI de una red corporativa</figcaption>
+    </figure>
+    <p>
+        En el Def Con 2108, los investigadores del proveedor global de soluciones de seguridad IT Check Point, anunciaron dos vulnerabilidades de desbordamiento de búfer críticas en la implementación de HP de los ampliamente utilizados protocolos de fax Group 3 (G3) en todas sus impresoras de inyección de tinta OfficeJet integradas, según una publicación de blog del 12 de agosto.
+    </p>
+    <p>
+        Los investigadores pudieron tomar el control de los dispositivos mediante el envío de un fax malicioso sin condiciones previas y luego aprovechar la herramienta EternalBlue para una mayor penetración de la red. HP ha lanzado parches para ambas vulnerabilidades y se recomienda a los usuarios que actualicen sus dispositivos lo antes posible.
+    </p>
+    <figure>
+        <img src="../assets/img/interno_blog_flujo_faxploit.jpg" height="164" width="416"/>
+        <figcaption class="text-center"><strong>Figura 1.</strong> Flujo del ataque faxploit</figcaption>
+    </figure>
+    <p>
+        Bob Noel, Director de Marketing y Alianzas Estratégicas de Plixer, dijo que el flujo constante de nuevas vulnerabilidades nunca se ralentizará y que cualquier dispositivo conectado a IP en una red crea su propia superficie de amenazas. "En la mayoría de los casos, se aprovisionan en la red como dispositivos confiables, lo que significa que pueden transmitir cualquier protocolo o aplicación a través de los segmentos de red a los que tienen acceso", dijo Noel. "Con tantas superficies de amenazas, las organizaciones deben hacer dos cosas para reducir su riesgo".
+    </p>
+
+    <p>
+        Noel dijo que, en primer lugar, hacen una transición a un modelo de cero confianzas y luego deben comenzar a implementar análisis de tráfico de red para examinar el tráfico y buscar patrones de actividad maliciosa.
+    </p>
+
+    <p>
+        También agregó que los dispositivos deben aprovisionarse en un modelo de mínimo privilegio, donde solo pueden comunicarse a través de los protocolos y aplicaciones para los cuales están destinados.
+    </p>
+
+    <p>
+        El exploit fue anunciado semanas después de que HP anunciara lo que llamó el primer programa mundial de recompensas por errores de impresoras. Un portavoz de HP dijo a SC Media que su empresa se toma en serio la seguridad y alienta a los clientes a mantener sus sistemas actualizados.
+    </p>
+
+    <p>
+        "HP fue informado de una vulnerabilidad en ciertas impresoras por un investigador externo", dijo el vocero. "HP tiene actualizaciones disponibles para mitigar los riesgos y ha publicado un boletín de seguridad con más información".
+    </p>
+
+
+
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 2018 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:970px;height:250px"
+         data-ad-client="ca-pub-6323652906385212"
+         data-ad-slot="2052154717"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="fb-share-button" data-href="https://juanoliver.net//blog/Error-de-las-impresoras-HP-OfficeJet-pone-en-riesgo-toda-la-red.html" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjuanoliver.net%2Fblog%2Fdeteccion_de_intrusos_redes_WiFi.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a>
+    </div>
+    <div class="twitter">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-hashtags="SECNAR" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div id="disqus_thread"></div>
+</article>

@@ -1,7 +1,7 @@
 $hero-height: 100vh;
 
 .hero-section.inicio {
-  background: url('/assets/img/bannerInicio.png') 50% no-repeat fixed;
+  background: url('/assets/img/banner_inicio.jpg') 50% no-repeat fixed;
   background-size: cover;
   height: $hero-height;
   text-align: center;
@@ -48,7 +48,7 @@ $hero-height: 100vh;
 }
 
 .hero-section.contacto {
-  background: url('/assets/img/bannerContacto.png') 50% no-repeat fixed;
+  background: url('/assets/img/banner_contacto.jpg') 50% no-repeat fixed;
   background-size: cover;
   height: $hero-height;
   text-align: center;
@@ -64,7 +64,7 @@ $hero-height: 100vh;
 }
 
 .hero-section.blog {
-  background: url('/assets/img/bannerBlog.png') 50% no-repeat fixed;
+  background: url('/assets/img/banner_blog.jpg') 50% no-repeat fixed;
   background-size: cover;
   height: $hero-height;
   text-align: center;
@@ -96,7 +96,7 @@ $hero-height: 100vh;
 }
 
 .hero-section.articulo.juice {
-  background: url('/assets/img/banner_juicejacking.png') 50% no-repeat fixed;
+  background: url('/assets/img/banner_blog_juice_jacking.jpg') 50% no-repeat fixed;
   background-size: cover;
   height: $hero-height;
   text-align: center;
@@ -112,7 +112,23 @@ $hero-height: 100vh;
 }
 
 .hero-section.articulo.metodos {
-  background: url('/assets/img/banner_metodos.png') 50% no-repeat fixed;
+  background: url('/assets/img/banner_blog_metodos.jpg') 50% no-repeat fixed;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .hero-section-text {
+    color: $white;
+    text-shadow: 1px 1px 2px $black;
+  }
+}
+
+.hero-section.articulo.faxploit {
+  background: url('/assets/img/banner_blog_faxploit.jpg') 50% no-repeat fixed;
   background-size: cover;
   height: $hero-height;
   text-align: center;

@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/Users/nauj/WebStorm Projects/juanoliver.zurb/node_modules/@webassemblyjs/floating-point-hex-parser/LICENSE'
+  Error: EACCES: permission denied, mkdir '/Users/nauj/WebStorm Projects/juanoliver.zurb/node_modules/append-buffer'
 
 npm manifest: 
   {
@@ -31,12 +31,15 @@ npm manifest:
   	"dependencies": {
   		"aos": "^2.2.0",
   		"foundation-sites": "~6.4.3",
+  		"imagemin-optipng": "^5.2.1",
   		"jquery": "^3.2.1",
   		"motion-ui": "~2.0.3",
   		"slick-carousel": "^1.8.1",
   		"svg-injector-2": "^2.1.3",
   		"tablesaw": "^3.0.5",
-  		"what-input": "^5.1.1"
+  		"what-input": "^5.1.1",
+  		"imagemin-jpegtran": "latest",
+  		"imagemin-gifsicle": "latest"
   	},
   	"devDependencies": {
   		"babel-core": "^6.24.1",
@@ -45,7 +48,7 @@ npm manifest:
   		"babel-preset-es2015": "^6.24.1",
   		"babel-register": "^6.26.0",
   		"browser-sync": "^2.10.0",
-  		"gulp": "gulpjs/gulp#4.0",
+  		"gulp": "github:gulpjs/gulp#4.0",
   		"gulp-autoprefixer": "^5.0.0",
   		"gulp-babel": "^7.0.1",
   		"gulp-clean-css": "^3.10.0",
@@ -54,6 +57,10 @@ npm manifest:
   		"gulp-extname": "^0.2.0",
   		"gulp-if": "^2.0.0",
   		"gulp-imagemin": "^4.1.0",
+  		"imagemin-pngquant": "^6.0.0",
+  		"imagemin-jpegtran": "^5.0.2",
+  		"imagemin-gifsicle": "^5.2.0",
+  		"imagemin-optipng": "^5.2.1",
   		"gulp-load-plugins": "^1.1.0",
   		"gulp-sass": "^4.0.1",
   		"gulp-sourcemaps": "^2.6.4",
@@ -2859,9 +2866,12 @@ Lockfile:
       combined-stream "1.0.6"
       mime-types "^2.1.12"
   
-  foundation-sites@~6.5.0-rc.2:
-    version "6.5.0-rc.2"
-    resolved "https://registry.yarnpkg.com/foundation-sites/-/foundation-sites-6.5.0-rc.2.tgz#0890f52e9dffed93ea394402b5ac9c1837618c08"
+  foundation-sites@~6.4.3:
+    version "6.4.3"
+    resolved "https://registry.yarnpkg.com/foundation-sites/-/foundation-sites-6.4.3.tgz#ea89eb599badf6f03dd526c51f00bdb942a844f6"
+    dependencies:
+      jquery ">=3.0.0"
+      what-input "^4.1.3"
   
   fragment-cache@^0.2.1:
     version "0.2.1"
@@ -4119,7 +4129,7 @@ Lockfile:
       bin-wrapper "^3.0.0"
       logalot "^2.0.0"
   
-  jquery@^3.2.1:
+  jquery@>=3.0.0, jquery@^3.2.1:
     version "3.3.1"
     resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
   
@@ -7308,6 +7318,10 @@ Lockfile:
       uglifyjs-webpack-plugin "^1.2.4"
       watchpack "^1.5.0"
       webpack-sources "^1.0.1"
+  
+  what-input@^4.1.3:
+    version "4.3.1"
+    resolved "https://registry.yarnpkg.com/what-input/-/what-input-4.3.1.tgz#b8ea7554ba1d9171887c4c6addf28185fec3d31d"
   
   what-input@^5.1.1:
     version "5.1.1"
