@@ -1,0 +1,108 @@
+---
+layout: index
+meta-title: Comprender las amenazas ocultas - rootkits y botnets
+categoría: Seguridad informática
+fecha: 16 de agosto de 2018
+---
+
+<div class="hero-section articulo botnet hide-for-small-only">
+    <div class="hero-section-text">
+        <h1>{{meta-title}}</h1>
+    </div>
+</div>
+
+<div class="callout alert">
+    <h2>Advertencia</h2>
+    <p>Siempre recomendamos que cualquiera de las actividades descritas haya sido aprobada explícitamente por el (los) objetivo (s) dentro del alcance de una prueba de penetración autorizada y que lleve consigo una copia de una carta de autorización en todo momento.</p>
+    <p>Toda la información proporcionada en este sitio es solo para fines educativos. El sitio y los autores del sitio web no son responsables en ningún caso del uso indebido de la información.</p>
+</div>
+
+<article class="article">
+    <header class="header">
+        <div class="category">Categoría: {{categoría}}</div>
+        <h1 class="show-for-small-only">{{meta-title}}</h1>
+        <div class="meta">
+            <span class="author">by <span class="author-name">Juan Oliver</span></span>
+            <span class="pub-date">Publicado el {{fecha}}</span>
+        </div>
+    </header>
+
+    <h2>¿Qué son los rootkits y botnets?</h2>
+
+    <figure>
+        <img src="../assets/img/blog_rootkit.jpg" height="164" width="416"/>
+        <figcaption class="text-center"><strong>Figura 1.</strong> Imagen: Kaspersky Lab.</figcaption>
+    </figure>
+
+    <p>
+        Un rootkit es una pieza de software que puede instalarse y ocultarse en su computadora sin su conocimiento. Puede ser incluido en un paquete de software más grande o instalado por un atacante que haya podido aprovechar una vulnerabilidad en su computadora o lo haya convencido de que lo descargue. Los rootkits no son necesariamente maliciosos, pero pueden ocultar actividades maliciosas. Los atacantes pueden acceder a la información, controlar sus acciones, modificar programas o realizar otras funciones en su computadora sin ser detectados.
+    </p>
+
+    <p>
+        Por otro lado, Botnet es un término derivado de la idea de redes bot. En su forma más básica, un robot es simplemente un programa de computadora automatizado. En el contexto de las botnets, los robots se refieren a las computadoras que pueden ser controladas por una o muchas fuentes externas. Por lo general, un atacante obtiene el control al infectar las computadoras con un virus u otro código malicioso que le da acceso al atacante. Su computadora puede ser parte de una botnet aunque parezca que funciona normalmente. Las redes de bots se utilizan a menudo para llevar a cabo una serie de actividades, desde la distribución de correo no deseado y virus hasta la realización de ataques de denegación de servicio (para más información, consulte Cómo comprender los ataques de denegación de servicio).
+    </p>
+
+    <h2>¿Por qué se los considera amenazas?</h2>
+    <p>
+        El principal problema con los rootkits y botnets es que están ocultos. Aunque las botnets no están ocultas de la misma manera que los rootkits, pueden no ser detectados a menos que específicamente estés buscando cierta actividad. Si se ha instalado un rootkit, es posible que no sepa que su computadora se ha visto comprometida, y es posible que el software antivirus tradicional no pueda detectar los programas maliciosos. Los atacantes también están creando programas más sofisticados que se actualizan para que sean aún más difíciles de detectar.
+    </p>
+
+    <p>
+        Los atacantes pueden usar rootkits y botnets para acceder y modificar información personal, atacar otras computadoras y cometer otros crímenes, mientras permanecen sin ser detectados. Al usar múltiples computadoras, los atacantes aumentan el alcance y el impacto de sus crímenes. Debido a que cada computadora en una botnet se puede programar para ejecutar el mismo comando, un atacante puede hacer que cada una de ellas explore varias computadoras en busca de vulnerabilidades, controle la actividad en línea o recopile la información ingresada en formularios en línea.
+    </p>
+
+    <p>
+        Desafortunadamente, si hay un rootkit en su computadora o si un atacante está usando su computadora en una botnet, es posible que no lo sepa. Incluso si descubres que eres una víctima, es difícil para el usuario promedio recuperarse efectivamente. Es posible que el atacante haya modificado los archivos en su computadora, por lo que simplemente eliminar los archivos maliciosos puede no resolver el problema y es posible que no pueda confiar de manera segura en una versión anterior de un archivo. Si crees que eres una víctima, considera contactar a un especialista en seguridad capacitado.
+    </p>
+
+    <p>
+        Como alternativa, algunos proveedores están desarrollando productos y herramientas que pueden eliminar un rootkit de su computadora. Si el software no puede localizar y eliminar la infección, es posible que deba reinstalar su sistema operativo, generalmente con un disco de restauración del sistema que a menudo se suministra con una computadora nueva. Tenga en cuenta que la reinstalación o restauración del sistema operativo normalmente borra todos sus archivos y cualquier software adicional que usted haya instalado en tu computadora. Además, la infección puede ubicarse a un nivel tan profundo que no se puede eliminar simplemente reinstalando o restaurando el sistema operativo.
+    </p>
+
+    <p>
+        El exploit fue anunciado semanas después de que HP anunciara lo que llamó el primer programa mundial de recompensas por errores de impresoras. Un portavoz de HP dijo a SC Media que su empresa se toma en serio la seguridad y alienta a los clientes a mantener sus sistemas actualizados.
+    </p>
+
+    <h2>¿Qué puedes hacer para protegerte?</h2>
+
+    <p>
+        Si practica buenos hábitos de seguridad, puede reducir el riesgo de que su computadora se vea comprometida:
+    </p>
+
+    <ul>
+        <li>
+            Utilice y mantenga el software antivirus: el software antivirus reconoce y protege su computadora contra la mayoría de los virus conocidos, por lo que es posible que pueda detectar y eliminar el virus antes de que pueda dañarlo. Debido a que los atacantes continuamente escriben nuevos virus, es importante mantener sus definiciones actualizadas. Algunos proveedores de antivirus también ofrecen software anti-rootkit.
+        </li>
+        <li>
+            Instale un cortafuegos: los cortafuegos pueden evitar algunos tipos de infección bloqueando el tráfico malicioso antes de que pueda entrar en su computadora y limitando el tráfico que envía. Algunos sistemas operativos en realidad incluyen un firewall, pero debe asegurarse de que esté habilitado.
+        </li>
+        <li>
+            Use buenas contraseñas: seleccione contraseñas que los atacantes puedan adivinar con dificultad y use diferentes contraseñas para diferentes programas y dispositivos. No elija opciones que le permitan a su computadora recordar sus contraseñas.
+        </li>
+        <li>
+            Mantenga el software actualizado: instale parches de software para que los atacantes no puedan aprovechar los problemas conocidos o las vulnerabilidades. Muchos sistemas operativos ofrecen actualizaciones automáticas. Si esta opción está disponible, debe habilitarla.
+        </li>
+        <li>
+            Siga las buenas prácticas de seguridad: tome las precauciones adecuadas al usar el correo electrónico y los navegadores web para reducir el riesgo de que sus acciones desencadenen una infección.
+        </li>
+    </ul>
+
+
+
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 2018 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:970px;height:250px"
+         data-ad-client="ca-pub-6323652906385212"
+         data-ad-slot="2052154717"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="fb-share-button" data-href="https://juanoliver.net//blog/Comprender-las-amenazas-ocultas-rootkits-y-botnets.html" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjuanoliver.net%2Fblog%2FComprender-las-amenazas-ocultas-rootkits+y+botnets.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
+    <div class="twitter">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-hashtags="SECNAR" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div id="disqus_thread"></div>
+</article>
