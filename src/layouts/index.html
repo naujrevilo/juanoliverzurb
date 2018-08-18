@@ -6,6 +6,56 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{#ifpage "deteccion_de_intrusos_redes_WiFi"}}
+    {{#each twittermeta.blog_01}}
+    <meta property="{{name}}" content="{{content}}">
+    {{/each}}
+    {{/ifpage}}
+    {{#ifpage "El_Juice_Jacking_y_5_recomendaciones_sobre_el_uso_de_puertos_USB_publicos"}}
+    {{#each twittermeta.blog_02}}
+    <meta property="{{name}}" content="{{content}}">
+    {{/each}}
+    {{/ifpage}}
+    {{#ifpage "5_metodos_de_recopilacion_de_informacion"}}
+    {{#each twittermeta.blog_03}}
+    <meta property="{{name}}" content="{{content}}">
+    {{/each}}
+    {{/ifpage}}
+    {{#ifpage "Error-de-las-impresoras-HP-OfficeJet-pone-en-riesgo-toda-la-red"}}
+    {{#each twittermeta.blog_04}}
+    <meta property="{{name}}" content="{{content}}">
+    {{/each}}
+    {{/ifpage}}
+    {{#ifpage "Comprender-las-amenazas-ocultas-rootkits-y-botnets"}}
+    {{#each twittermeta.blog_05}}
+    <meta property="{{name}}" content="{{content}}">
+    {{/each}}
+    {{/ifpage}}
+    {{#ifpage "deteccion_de_intrusos_redes_WiFi"}}
+    {{#each facebookmeta.blog_01}}
+    <meta property="{{property}}" content="{{content}}">
+    {{/each}}
+    {{/ifpage}}
+    {{#ifpage "El_Juice_Jacking_y_5_recomendaciones_sobre_el_uso_de_puertos_USB_publicos"}}
+    {{#each facebookmeta.blog_02}}
+    <meta property="{{property}}" content="{{content}}">
+    {{/each}}
+    {{/ifpage}}
+    {{#ifpage "5_metodos_de_recopilacion_de_informacion"}}
+    {{#each facebookmeta.blog_03}}
+    <meta property="{{property}}" content="{{content}}">
+    {{/each}}
+    {{/ifpage}}
+    {{#ifpage "Error-de-las-impresoras-HP-OfficeJet-pone-en-riesgo-toda-la-red"}}
+    {{#each facebookmeta.blog_04}}
+    <meta property="{{property}}" content="{{content}}">
+    {{/each}}
+    {{/ifpage}}
+    {{#ifpage "Comprender-las-amenazas-ocultas-rootkits-y-botnets"}}
+    {{#each facebookmeta.blog_05}}
+    <meta property="{{property}}" content="{{content}}">
+    {{/each}}
+    {{/ifpage}}
     <title>{{meta-title}} | SECNAR</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
     <link rel="stylesheet" href="{{root}}assets/fonts/foundation-icons.css" />

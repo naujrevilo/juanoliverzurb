@@ -1,0 +1,119 @@
+blog_01:
+  -
+    "name": "twitter:card"
+    "content": "summary_large_image"
+  -
+    "name": "twitter:site"
+    "content": "@secnar_colombia"
+
+  -
+    "name": "twitter:creator"
+    "content": "@yeah_nauj"
+
+  -
+    "name": "twitter:title"
+    "content": "Detección de intrusos en redes inalámbricas. Características, el despliegue y desventajas"
+
+  -
+    "name": "twitter:description"
+    "content": "Es común creer que las redes inalámbricas son mejores que las redes LAN normales, tal vez porque nos permiten poder trasladarnos dentro del rango de operación de la red y hacer las mismas tareas de compartir archivos y otros recursos con los otros miembros de la wireless, sin embargo toda tecnología conlleva sus riesgos y la WLAN no es la excepción."
+
+  -
+    "name": "twitter:image"
+    "content": "https://juanoliver.net/assets/img/blog_intruso.jpg"
+
+blog_02:
+-
+    "name": "twitter:card"
+    "content": "summary_large_image"
+-
+    "name": "twitter:site"
+    "content": "@secnar_colombia"
+
+-
+    "name": "twitter:creator"
+    "content": "@yeah_nauj"
+
+-
+    "name": "twitter:title"
+    "content": "El Juice Jacking y 5 recomendaciones sobre el uso de puertos USB públicos"
+
+-
+    "name": "twitter:description"
+    "content": "El año pasado, estando precisamente en el aeropuerto Eldorado de Bogotá, leí un artículo sobre Juice Jacking, una técnica que consiste en atacar un dispositivo móvil por medio del puerto de carga, el cual todo sabemos, es USB (en cualquiera de sus tamaños), y de esta manera infectar el dispositivo con un malware o copiar información de manera no autorizada."
+
+-
+    "name": "twitter:image"
+    "content": "https://juanoliver.net/assets/img/banner_blog_juice_jacking.jpg"
+
+blog_03:
+-
+    "name": "twitter:card"
+    "content": "summary_large_image"
+-
+    "name": "twitter:site"
+    "content": "@secnar_colombia"
+
+-
+    "name": "twitter:creator"
+    "content": "@yeah_nauj"
+
+-
+    "name": "twitter:title"
+    "content": "Cinco (5) métodos de recopilación de información"
+
+-
+    "name": "twitter:description"
+    "content": "Hay una variedad de métodos físicos para la recopilación de información"
+
+-
+    "name": "twitter:image"
+    "content": "https://juanoliver.net/assets/img/banner_blog_metodos.jpg"
+
+blog_04:
+-
+    "name": "twitter:card"
+    "content": "summary_large_image"
+-
+    "name": "twitter:site"
+    "content": "@secnar_colombia"
+
+-
+    "name": "twitter:creator"
+    "content": "@yeah_nauj"
+
+-
+    "name": "twitter:title"
+    "content": "Faxploit - el error de las impresoras HP OfficeJet pone en riesgo toda la red"
+
+-
+    "name": "twitter:description"
+    "content": "Las fallas críticas en millones de impresoras HP OfficeJet permitirán a los atacantes tomar el control de las impresoras que potencialmente las utilizan como un trampolín hacia la red a la que están conectadas."
+
+-
+    "name": "twitter:image"
+    "content": "https://juanoliver.net/assets/img/banner_blog_faxploit.jpg"
+
+blog_05:
+-
+    "name": "twitter:card"
+    "content": "summary_large_image"
+-
+    "name": "twitter:site"
+    "content": "@secnar_colombia"
+
+-
+    "name": "twitter:creator"
+    "content": "@yeah_nauj"
+
+-
+    "name": "twitter:title"
+    "content": "Comprender las amenazas ocultas: rootkits y botnets"
+
+-
+    "name": "twitter:description"
+    "content": "El principal problema con los rootkits y botnets es que están ocultos. Aunque las botnets no están ocultas de la misma manera que los rootkits, pueden no ser detectados a menos que específicamente estés buscando cierta actividad. Si se ha instalado un rootkit, es posible que no sepa que su computadora se ha visto comprometida, y es posible que el software antivirus tradicional no pueda detectar los programas maliciosos. Los atacantes también están creando programas más sofisticados que se actualizan para que sean aún más difíciles de detectar."
+
+-
+    "name": "twitter:image"
+    "content": "https://juanoliver.net/assets/img/banner_blog_botnet.jpg"
