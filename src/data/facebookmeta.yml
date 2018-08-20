@@ -98,3 +98,23 @@ blog_05:
 -
   "property": "og:image"
   "content": "https://juanoliver.net/assets/img/banner_blog_botnet.jpg"
+
+blog_06:
+-
+  "property": "fb:app_id"
+  "content": "2108926755785235"
+-
+  "property": "og:url"
+  "content": "https://juanoliver.net/blog/usuarios-de-Android-expuestos-por-Man-in-the-Disk.html"
+-
+  "property": "og:type"
+  "content": "article"
+-
+  "property": "og:title"
+  "content": "Usuarios de Android expuestos por Man-in-the-Disk"
+-
+  "property": "og:description"
+  "content": "¿Recuerdan los ataques Man-in-the-Middle? Pues ahora tenemos una variación que los investigadores de Check Point descubrieron para aplicaciones de Android que aprovecha el almacenamiento externo, denominado ataques Man-in-the-Disk."
+-
+  "property": "og:image"
+  "content": "https://juanoliver.net/assets/img/blog_mitd.jpg"
