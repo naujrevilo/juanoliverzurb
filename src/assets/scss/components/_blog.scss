@@ -175,3 +175,24 @@ img {
 .fb-share-button, .twitter{
   padding-bottom: 1em;
 }
+
+.log_outlook,
+.log_outlook a{
+  color: red;
+}
+
+span.ip,
+span.server{
+  background-color: Yellow;
+  font-weight: bolder;
+}
+
+span.server,
+span.server a{
+  color: red;
+}
+
+span.clasify{
+  color: white;
+  background-color: red;
+}

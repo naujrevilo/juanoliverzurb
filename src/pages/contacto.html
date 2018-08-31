@@ -49,8 +49,22 @@ meta-title: Contacto
 						<textarea maxlength="1000" name="Description" placeholder="Descripción de sus necesidades"></textarea>
 					</label>
 				</div>
-			</form>
+                <div class="cell">
+                    <tr>
+                        <td>
+                            <span style='nowrap:nowrap;text-align:top;font-size:12px;font-family:Arial;width:200px;line-height:22px;'>Introduzca el captcha</span><br>
+                            <input type='text' style='width:250px;' maxlength='80' name='enterdigest' />
+                        </td>
+                    </tr>
 
+                    <tr>
+                        <td>
+                            <img id='imgid' src='https://crm.zoho.com/crm/CaptchaServlet?formId=5fc5e687b1db52b2846d65398c503b3facf724029091104e9cda83944cc62a49&grpid=f7f791c8cd4bc96cb1b7a3c7e4eb8e093ef80714a9b8b7b5e60ad3ab44e2dd41'>
+                            <a class="button alert" href='javascript:;' onclick='reloadImg()'>Recargar</a>
+                        </td>
+                    </tr>
+                </div>
+            </form>
 			<div class="cell large-auto text-center">
 				<input class="success button" type="submit" value="Enviar" />
 				<input class="warning button" type="reset" value="Restablecer" />
@@ -62,6 +76,14 @@ meta-title: Contacto
             var fldLangVal = new Array('Nombres', 'Apellidos', 'Correo electrónico', 'Tel.', 'Mensaje');
             var name = '';
             var email = '';
+
+            function reloadImg() {
+                if(document.getElementById('imgid').src.indexOf('&d') !== -1 ) {
+                    document.getElementById('imgid').src=document.getElementById('imgid').src.substring(0,document.getElementById('imgid').src.indexOf('&d'))+'&d'+new Date().getTime();
+                }  else {
+                    document.getElementById('imgid').src = document.getElementById('imgid').src+'&d'+new Date().getTime();
+                }
+            }
 
             function checkMandatory() {
                 for (i = 0; i < mndFileds.length; i++) {
@@ -139,3 +161,6 @@ meta-title: Contacto
 		</script>
 	</div>
 </form>
+<!-- Do not remove this code. -->
+    <iframe name='captchaFrame' style='display:none;'></iframe>
+</div>

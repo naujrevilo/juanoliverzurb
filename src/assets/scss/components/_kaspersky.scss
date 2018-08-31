@@ -1,0 +1,112 @@
+.features-list .image-aside .variant-6{
+  margin-bottom: 0;
+}
+.features-list.variant-6.image-aside li{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1em;
+  padding-top: 0;
+}
+.features-list.image-aside .feature-item{
+  text-align: left;
+}
+
+.card.background-blue{
+  background-color: #E2EDF3;
+}
+
+p.text-center.blue,
+h5.text-center.blue{
+  color: white;
+  background: #82A8B8;
+  margin: .5em auto;
+  padding: .5em;
+  width: 45%;
+
+  border-radius: 5px;
+}
+
+p.product-item.tagline {
+  border-radius: .3em;
+  display: block;
+  margin-bottom: 0;
+  padding: .25em;
+  line-height: 1;
+  font-size: .625em;
+  font-weight: 500;
+  color: #999;
+  text-transform: uppercase;
+  background: #eee
+}
+
+.fi-check:before{
+  color: red;
+}
+/*ROOMS BUTTON*/
+.button-group {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0; }
+.button-group:before {
+  /*content: attr(data-grouptype);*/
+  z-index: 99999;
+  color: #999;
+  display: block;
+  font-size: 1rem;
+  padding: 0.25em;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 42.5%;
+  top: 0.35rem; }
+.button-group button + button {
+  margin-left: 5px; }
+.marketing-site-content-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  .button.round {
+    border-radius: 5000px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .marketing-site-content-section-img {
+    align-self: center;
+    flex: 1 0 100%;
+
+    img {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 40em) {
+      flex: 1 0 50%;
+    }
+  }
+
+  .marketing-site-content-section-block {
+    padding: 1rem;
+    flex: 1 0 100%;
+    align-self: stretch;
+    background: $light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media screen and (min-width: 40em) {
+      flex: 1 0 50%;
+      padding: 2rem;
+    }
+  }
+}
+
+.marketing-site-content-section-block-header {
+  font-size: 24px;
+}
+
+.marketing-site-content-section-block-subheader {
+  font-size: 13px;
+}
+

@@ -1,0 +1,135 @@
+---
+layout: index
+meta-title: Troyano - Citación Fiscalía General de la Nación
+categoría: Seguridad de la información
+fecha: 31 de agosto de 2018
+page: blog_07
+author: Juan Oliver
+---
+
+<div class="hero-section articulo trojanfiscalia hide-for-small-only">
+    <div class="hero-section-text">
+        <h1>{{meta-title}}</h1>
+    </div>
+</div>
+
+<div class="callout alert">
+    <h2>Advertencia</h2>
+    <p>Siempre recomendamos que cualquiera de las actividades descritas haya sido aprobada explícitamente por el (los) objetivo (s) dentro del alcance de una prueba de penetración autorizada y que lleve consigo una copia de una carta de autorización en todo momento.</p>
+    <p>Toda la información proporcionada en este sitio es solo para fines educativos. El sitio y los autores del sitio web no son responsables en ningún caso del uso indebido de la información.</p>
+</div>
+
+<article class="article">
+    <header class="header">
+        <div class="category">Categoría: {{categoría}}</div>
+        <h1 class="show-for-small-only">{{meta-title}}</h1>
+        <div class="meta">
+            <span class="author">by <span class="author-name">{{author}}</span></span>
+            <span class="pub-date">Publicado el {{fecha}}</span>
+        </div>
+    </header>
+
+    <p>
+        En días pasados recibí en mi correo por segunda vez, un comunicado que decía ser de la Fiscalía General de la Nación, en el que me llaman a interrogatorio “para declaraciones y pruebas al respectivo proceso”. También dice que “Este interrogatorio tiene como objetivo la aclaración de hechos contundentes.”. el correo electrónico contiene un archivo comprimido en “.rar”, del cual les hablaré más adelante. Pues bien, me puse a la tarea de revisar los datos de origen del mensaje y encontré lo siguiente:
+    </p>
+
+    <p>
+        <em class="log_outlook">Mon, 27 Aug 2018 20:57:02 +0000 Authentication-Results: spf=fail (sender IP is <span class="ip">107.190.138.15</span>) Received-SPF: Fail (protection.outlook.com: domain of fiscalia.gov.co does not designate 107.190.138.15 as permitted sender)</em>
+    </p>
+
+    <p>
+        Como pueden observar, marqué la IP desde donde se envió el correo electrónico y revisé de donde era, encontrando que la ubicación del servidor es en Orlando, Florida, USA., pensé entonces, “bueno, tal vez al usar un servicio de Microsoft el servidor puede estar ubicado allá”. Así que me puse en la tarea de buscar la ubicación del servidor de correo de la Fiscalía y encontré que desde la ciudad en donde estoy, Cartagena, el servidor al que me direcciona se encuentra en Barranquilla:
+    </p>
+    <picture>
+        <img src="{{root}}assets/img/geo_ip.jpg" width="800" height="400" alt="Georeferenciación IP">
+    </picture>
+
+    <p>
+        Pero lo anterior no es concluyente, entonces busqué el listado oficial de IP´s de  Microsoft para los servicios de Office 365, el cual se puede encontrar en la dirección: <a href="https://support.office.com/es-es/article/url-de-office-365-e-intervalos-de-direcciones-ip-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=es-ES&rs=es-ES&ad=ES#bkmk_teams" target="_blank"> Direcciones IP</a>, encontrando que la dirección mostrada en el origen del mensaje (107.190.138.15), no se encuentra dentro de dicho listado.
+    </p>
+
+    <p>
+        En otros datos del origen del mensaje se puede observar una referencia a un sitio web llamado <span class="server">junglakumba.com</span>, al revisar la información sobre este sitio descubrí que es un host dinamico alojado en hostdime.com que corresponde a un restaurante en Bogotá y cuyo registro aparece a nombre de un usuario “anoriega”.
+    </p>
+
+    <p>
+        <em>smtp.mailfrom=fiscalia.gov.co; outlook.com; dkim=pass (signature was verified) header.d=junglakumba.com;outlook.com; dmarc=none action=none header.from=fiscalia.gov.co;</em>
+    </p>
+
+    <p>
+        <em>X-Get-Message-Sender-Via: vps.junglakumba.com: <span class="server">authenticated_id: anoriega@junglakumba.com</span> X-Authenticated-Sender: vps.junglakumba.com: anoriega@junglakumba.com X-IncomingHeaderCount: 18 Return-Path: notificaciones@fiscalia.gov.co X-MS-Exchange-Organization-ExpirationStartTime: 27 Aug 2018 20:57:01.7324</em>
+    </p>
+
+    <p>
+        Todo esto lo que genera es más confusión y hace sospechar un poco más sobre un intento de phishing, así que me puse en la tarea de revisar el archivo comprimido.
+    </p>
+
+    <p>
+        Luego de descomprimir el archivo adjunto en el correo y haciendo uso de Kaspersky Total Security, realicé un análisis del archivo. Dicho análisis encontró lo que se muestra en la siguiente imagen:
+    </p>
+    <picture>
+        <img src="{{root}}assets/img/kaspersky_trojan_result.jpg" width="800" height="400" alt="Resultado escáneo Kaspersky">
+    </picture>
+
+    <p>
+        En esta imagen logramos comprobar que el archivo de Word dentro del comprimido tiene código malicioso:
+    </p>
+
+    <picture>
+        <img src="{{root}}assets/img/datos_desinfeccion_kaspersky.jpg" width="800" height="400" alt="Datos desinfección Kaspersky">
+    </picture>
+
+    <p>
+        El resultado en detalle muestra que el archivo está infectado en las macros con el troyano llamado Trojan-Downloader.MsWord.Agent.byk, hay que tener en cuenta que cada antivirus tiene su nomenclatura propia a la hora de nombrar virus, troyanos y otros males informáticos. El malware de esta familia consiste en un documento .doc o .docx que contiene un script que se puede ejecutar en Microsoft Word (Visual Basic para Aplicaciones). La secuencia de comandos contiene procedimientos para destruir, bloquear, modificar o copiar datos, además de interferir con el funcionamiento de computadoras o redes de computadoras. En resumen, este troyano se encuentra a nivel de macros VBA. Es por esto que deben estar bien configuradas las reglas de apertura de archivos con macros y no confiar en todo. TrojanDownloader: Win32 / Agent es una familia de troyanos que descargan software no deseado de un sitio web remoto. El contenido descargado podría incluir desde troyanos de descarga adicionales hasta programas de seguridad de imitación. La calificación de seguridad de estos troyanos está catalogada como <span class="clasify">Severo</span>.
+    </p>
+
+    <p>Algunos alias que recibe este troyano son:</p>
+
+    <ul>
+        <li>Trojan-Downloader.Win32.Agent.bqw (Kaspersky)</li>
+        <li>Trojan-Downloader.Win32.Agent.bvd (Kaspersky)</li>
+        <li>FakeAlert-K (McAfee)</li>
+        <li>Generic Downloader (McAfee)</li>
+        <li>W32/Agent.BRUP (Norman)</li>
+        <li>W32/DLoader.CWGF (Norman)</li>
+        <li>Troj/Dloadr-BAT (Sophos)</li>
+        <li>Troj/FakeVir-AB (Sophos)</li>
+        <li>Downloader (Symantec)</li>
+        <li>SpySherriff (Symantec)</li>
+        <li>PAK_Generic.001 (Trend Micro)</li>
+        <li>TROJ_AGENT.AAGU (Trend Micro)</li>
+        <li>TROJ_RENOS.NAT (Trend Micro)</li>
+    </ul>
+
+    <h2>
+        Recomendaciones generales para no infectarse de estos malware´s
+    </h2>
+
+    <ul>
+        <li>Mantener el software actualizado, esto incluye programas de office, flash player, sistema operativo, etc.</li>
+        <li>Tenga cuidado de vínculos y datos adjuntos, el correo electrónico y otras herramientas de mensajería son algunas de las formas más comunes desde donde se puede obtener archivos infectados. Los datos adjuntos o vínculos en los mensajes pueden abrir malware directamente y sigilosamente para luego ejecutar una descarga.</li>
+        <li>Evite visitar sitios web sospechosos que puedan descargar automáticamente archivos infectados a su equipo. Es importante entrar a cada sitio web digitando la dirección en la barra correspondiente y evitar usar links que puedan direccionar a sitios web fraudulentos.</li>
+        <li>Evitar la descarga de software pirata de sitios que puedan contener malware, lo cual es más común de lo que se cree.</li>
+        <li>No dar clic en los banners de publicidad o descargar por ejemplo barras de herramientas o complementos no reconocidos.</li>
+        <li>No permitir la auto ejecución de unidades de almacenamiento externo, como USB, CD/DVD, etc. Use dispositivos y medios de almacenamiento confiables y conocidos y siempre busque software malicioso en ellos antes de utilizarlos.</li>
+        <li>Use una cuenta de usuario que no tenga derechos de administrador, ya que, la mayoría de malware ejecutará los mismos privilegios que el usuario activo. Esto significa que, al limitar los privilegios de la cuenta, puede impedir que malware realizar cambios consecuenciales todos los dispositivos.</li>
+    </ul>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 2018 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:970px;height:250px"
+         data-ad-client="ca-pub-6323652906385212"
+         data-ad-slot="2052154717"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="fb-share-button" data-href="https://juanoliver.net//blog/troyano-fiscalia-colombia.html" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjuanoliver.net%2Fblog%2Ftroyano-fiscalia-colombia.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a>
+    </div>
+    <div class="twitter">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-hashtags="SECNAR, Fiscalía, Troyano, Malware, Kaspersky" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div id="disqus_thread"></div>
+</article>

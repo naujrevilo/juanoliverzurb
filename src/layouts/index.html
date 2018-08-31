@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Twitter Card-->
     {{#ifpage "deteccion_de_intrusos_redes_WiFi"}}
     {{#each twittermeta.blog_01}}
     <meta property="{{name}}" content="{{content}}">
@@ -35,6 +36,12 @@
     <meta property="{{name}}" content="{{content}}">
     {{/each}}
     {{/ifpage}}
+    {{#ifpage "troyano-fiscalia-colombia"}}
+    {{#each twittermeta.blog_07}}
+    <meta property="{{name}}" content="{{content}}">
+    {{/each}}
+    {{/ifpage}}
+    <!--Facebook Meta-->
     {{#ifpage "deteccion_de_intrusos_redes_WiFi"}}
     {{#each facebookmeta.blog_01}}
     <meta property="{{property}}" content="{{content}}">
@@ -65,7 +72,14 @@
     <meta property="{{property}}" content="{{content}}">
     {{/each}}
     {{/ifpage}}
+    {{#ifpage "troyano-fiscalia-colombia"}}
+    {{#each facebookmeta.blog_07}}
+    <meta property="{{property}}" content="{{content}}">
+    {{/each}}
+    {{/ifpage}}
+
     <title>{{meta-title}} | SECNAR</title>
+
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
     <link rel="stylesheet" href="{{root}}assets/fonts/foundation-icons.css" />
   </head>
@@ -85,5 +99,13 @@
     <script src="{{root}}assets/js/app.js"></script>
     <script id="dsq-count-scr" src="//juanolivernet.disqus.com/count.js" async></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26191186-1"></script>
+    <script src='http://cdn.mejorcodigo.net/mejor-push/mejor-push.js'></script>
+    <script src='http://cdn.mejorcodigo.net/mejor-push/mejor-push-helper.js'></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            initPush("35eba138-ae8b-4eed-901e-5fd9641fe439");
+        });
+    </script>
+
   </body>
 </html>

@@ -118,3 +118,22 @@ blog_06:
 -
   "property": "og:image"
   "content": "https://juanoliver.net/assets/img/blog_mitd.jpg"
+
+blog_07:
+- "property": "fb:app_id"
+  "content": "2108926755785235"
+
+- "property": "og:url"
+  "content": "https://juanoliver.net/blog/troyano-fiscalia-colombia.html"
+
+- "property": "og:type"
+  "content": "article"
+
+- "property": "og:title"
+  "content": "Troyano - Citación Fiscalía General de la Nación"
+
+- "property": "og:description"
+  "content": "En días pasados recibí en mi correo por segunda vez, un comunicado que decía ser de la Fiscalía General de la Nación, en el que me llaman a interrogatorio “para declaraciones y pruebas al respectivo proceso”."
+
+- "property": "og:image"
+  "content": "https://juanoliver.net/assets/img/banner_blog_trojan_horse_fiscalia.jpg"

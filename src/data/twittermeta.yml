@@ -141,3 +141,27 @@ blog_06:
 -
     "name": "twitter:image"
     "content": "https://juanoliver.net/assets/img/blog_mitd.jpg"
+
+blog_07:
+-
+    "name": "twitter:card"
+    "content": "summary_large_image"
+-
+    "name": "twitter:site"
+    "content": "@secnar_colombia"
+
+-
+    "name": "twitter:creator"
+    "content": "@yeah_nauj"
+
+-
+    "name": "twitter:title"
+    "content": "Troyano - Citación Fiscalía General de la Nación"
+
+-
+    "name": "twitter:description"
+    "content": "En días pasados recibí en mi correo por segunda vez, un comunicado que decía ser de la Fiscalía General de la Nación, en el que me llaman a interrogatorio “para declaraciones y pruebas al respectivo proceso”."
+
+-
+    "name": "twitter:image"
+    "content": "https://juanoliver.net/assets/img/banner_blog_trojan_horse_fiscalia.jpg"
