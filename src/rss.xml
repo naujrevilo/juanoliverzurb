@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Blog | SECNAR</title>
+        <link>https://juanoliver.net</link>
+        <description>Un blog sobre seguridad de la información y temas relacionados</description>
+
+        <item>
+            <title>Blog| SECNAR</title>
+            <link>https://juanoliver.net/blog.html</link>
+        </item>
+        <item>
+            <title>Productos para PYME| SECNAR</title>
+            <link>https://juanoliver.net/partners/kaspersky/empresa/kaspersky-empresas.html</link>
+        </item>
+        <item>
+            <title>Productos para Hogar| SECNAR</title>
+            <link>https://juanoliver.net/partners/kaspersky/hogar/kaspersky-hogar.html</link>
+        </item>
+        <item>
+            <title>Manejo de Vulnerabilidades| SECNAR</title>
+            <link>https://juanoliver.net/vulnerabilidades.html</link>
+        </item>
+        <item>
+            <title>Capacitaciones| SECNAR</title>
+            <link>https://juanoliver.net/capacitaciones.html</link>
+        </item>
+        <item>
+            <title>Servicios| SECNAR</title>
+            <link>https://juanoliver.net/servicios.html</link>
+        </item>
+
+        <item>
+            <title>El Juice Jacking y 5 recomendaciones sobre el uso de puertos USB públicos</title>
+            <link>https://juanoliver.net/blog/El_Juice_Jacking_y_5_recomendaciones_sobre_el_uso_de_puertos_USB_publicos.html</link>
+            <dc:creator>Juan Oliver</dc:creator>
+            <category>Seguridad Informática</category>
+            <description><![CDATA[El año pasado, estando precisamente en el aeropuerto Eldorado de Bogotá, leí un artículo sobre Juice Jacking, una técnica que consiste en atacar un dispositivo móvil por medio del puerto de carga, el cual todo sabemos, es USB (en cualquiera de sus tamaños), y de esta manera infectar el dispositivo con un malware o copiar información de manera no autorizada.]]></description>
+        </item>
+        <item>
+            <title>Faxploit - el error de las impresoras HP OfficeJet pone en riesgo toda la red</title>
+            <link>https://juanoliver.net/blog/Error-de-las-impresoras-HP-OfficeJet-pone-en-riesgo-toda-la-red.html</link>
+            <dc:creator>Juan Oliver</dc:creator>
+            <category>Seguridad Informática</category>
+            <description><![CDATA[Las fallas críticas en millones de impresoras HP OfficeJet permitirán a los atacantes tomar el control de las impresoras que potencialmente las utilizan como un trampolín hacia la red a la que están conectadas.]]></description>
+        </item>
+        <item>
+            <title>Comprender las amenazas ocultas: rootkits y botnets</title>
+            <link>https://juanoliver.net/blog/Comprender-las-amenazas-ocultas-rootkits-y-botnets.html</link>
+            <dc:creator>Juan Oliver</dc:creator>
+            <category>Seguridad Informática</category>
+            <description><![CDATA[El principal problema con los rootkits y botnets es que están ocultos. Aunque las botnets no están ocultas de la misma manera que los rootkits, pueden no ser detectados a menos que específicamente estés buscando cierta actividad. Si se ha instalado un rootkit, es posible que no sepa que su computadora se ha visto comprometida, y es posible que el software antivirus tradicional no pueda detectar los programas maliciosos. Los atacantes también están creando programas más sofisticados que se actualizan para que sean aún más difíciles de detectar.]]></description>
+        </item>
+        <item>
+            <title>Usuarios de Android expuestos por Man-in-the-Disk</title>
+            <link>https://juanoliver.net/blog/usuarios-de-Android-expuestos-por-Man-in-the-Disk.html</link>
+            <dc:creator>Juan Oliver</dc:creator>
+            <category>Seguridad Informática</category>
+            <description><![CDATA[¿Recuerdan los ataques Man-in-the-Middle? Pues ahora tenemos una variación que los investigadores de Check Point descubrieron para aplicaciones de Android que aprovecha el almacenamiento externo, denominado ataques Man-in-the-Disk.]]></description>
+        </item>
+        <item>
+            <title>Cinco (5) métodos de recopilación de información</title>
+            <link>https://juanoliver.net/blog/5_metodos_de_recopilacion_de_informacion.html</link>
+            <dc:creator>Juan Oliver</dc:creator>
+            <category>Seguridad Informática</category>
+            <description><![CDATA[Hay una variedad de métodos físicos para la recopilación de información]]></description>
+        </item>
+        <item>
+            <title>Detección de intrusos en redes inalámbricas. Características, el despliegue y desventajas</title>
+            <link>https://juanoliver.net/blog/deteccion_de_intrusos_redes_WiFi.html</link>
+            <dc:creator>Juan Oliver</dc:creator>
+            <category>Seguridad Informática</category>
+            <description><![CDATA[Es común creer que las redes inalámbricas son mejores que las redes LAN normales, tal vez porque nos permiten poder trasladarnos dentro del rango de operación de la red y hacer las mismas tareas de compartir archivos y otros recursos con los otros miembros de la wireless, sin embargo toda tecnología conlleva sus riesgos y la WLAN no es la excepción.]]></description>
+        </item>
+        <item>
+            <title>Troyano - Citación Fiscalía General de la Nación</title>
+            <link>https://juanoliver.net/blog/troyano-fiscalia-colombia.html</link>
+            <dc:creator>Juan Oliver</dc:creator>
+            <category>Seguridad de la Información</category>
+            <description><![CDATA[En días pasados recibí en mi correo por segunda vez, un comunicado que decía ser de la Fiscalía General de la Nación, en el que me llaman a interrogatorio “para declaraciones y pruebas al respectivo proceso”.]]></description>
+        </item>
+        <item>
+            <title>¿Cuál es la cultura de ciberseguridad de su empresa?</title>
+            <link>https://juanoliver.net/blog/cultura-ciberseguridad.html</link>
+            <dc:creator>Juan Oliver</dc:creator>
+            <category>Seguridad de la Información</category>
+            <description><![CDATA[Cada vez que se produce una importante brecha de seguridad, muchas personas se quedan rascando la cabeza y se preguntan ¿Cómo sucedió esto? ¿Son realmente los hackers tan buenos?]]></description>
+        </item>
+    </channel>
+</rss>

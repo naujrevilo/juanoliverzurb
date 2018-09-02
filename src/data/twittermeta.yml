@@ -165,3 +165,27 @@ blog_07:
 -
     "name": "twitter:image"
     "content": "https://juanoliver.net/assets/img/banner_blog_trojan_horse_fiscalia.jpg"
+
+blog_08:
+-
+    "name": "twitter:card"
+    "content": "summary_large_image"
+-
+    "name": "twitter:site"
+    "content": "@secnar_colombia"
+
+-
+    "name": "twitter:creator"
+    "content": "@yeah_nauj"
+
+-
+    "name": "twitter:title"
+    "content": "¿Cuál es la cultura de ciberseguridad de su empresa?"
+
+-
+    "name": "twitter:description"
+    "content": "Cada vez que se produce una importante brecha de seguridad, muchas personas se quedan rascando la cabeza y se preguntan ¿Cómo sucedió esto? ¿Son realmente los hackers tan buenos?"
+
+-
+    "name": "twitter:image"
+    "content": "https://juanoliver.net/assets/img/banner_blog_cultura_ciberseguridad.jpg"

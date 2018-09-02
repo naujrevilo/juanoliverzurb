@@ -137,3 +137,22 @@ blog_07:
 
 - "property": "og:image"
   "content": "https://juanoliver.net/assets/img/banner_blog_trojan_horse_fiscalia.jpg"
+
+blog_08:
+- "property": "fb:app_id"
+  "content": "2108926755785235"
+
+- "property": "og:url"
+  "content": "https://juanoliver.net/blog/cultura-ciberseguridad.html"
+
+- "property": "og:type"
+  "content": "article"
+
+- "property": "og:title"
+  "content": "¿Cuál es la cultura de ciberseguridad de su empresa?"
+
+- "property": "og:description"
+  "content": "Cada vez que se produce una importante brecha de seguridad, muchas personas se quedan rascando la cabeza y se preguntan ¿Cómo sucedió esto? ¿Son realmente los hackers tan buenos?"
+
+- "property": "og:image"
+  "content": "https://juanoliver.net/assets/img/banner_blog_cultura_ciberseguridad.jpg"
