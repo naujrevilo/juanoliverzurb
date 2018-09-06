@@ -189,3 +189,27 @@ blog_08:
 -
     "name": "twitter:image"
     "content": "https://juanoliver.net/assets/img/banner_blog_cultura_ciberseguridad.jpg"
+
+blog_09:
+-
+    "name": "twitter:card"
+    "content": "summary_large_image"
+-
+    "name": "twitter:site"
+    "content": "@secnar_colombia"
+
+-
+    "name": "twitter:creator"
+    "content": "@yeah_nauj"
+
+-
+    "name": "twitter:title"
+    "content": "Las naciones de Five Eyes y el cifrado de datos"
+
+-
+    "name": "twitter:description"
+    "content": "Los países miembros de la alianza de inteligencia Five Eyes lanzaron la semana pasada una declaración conjunta instando a las compañías tecnológicas a proporcionar voluntariamente un mecanismo para que las autoridades gubernamentales revisen las comunicaciones cifradas cuando investigan amenazas delictivas y terroristas."
+
+-
+    "name": "twitter:image"
+    "content": "https://juanoliver.net/assets/img/banner_blog_five_eyes.jpg"

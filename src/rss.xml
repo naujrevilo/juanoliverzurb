@@ -86,5 +86,12 @@
             <category>Seguridad de la Información</category>
             <description><![CDATA[Cada vez que se produce una importante brecha de seguridad, muchas personas se quedan rascando la cabeza y se preguntan ¿Cómo sucedió esto? ¿Son realmente los hackers tan buenos?]]></description>
         </item>
+        <item>
+            <title>Las naciones de Five Eyes y el cifrado de datos</title>
+            <link>https://juanoliver.net/blog/five_eyes_y_el_cifrado_de_datos.html</link>
+            <dc:creator>Juan Oliver</dc:creator>
+            <category>Seguridad de la Información</category>
+            <description><![CDATA[Los países miembros de la alianza de inteligencia Five Eyes lanzaron la semana pasada una declaración conjunta instando a las compañías tecnológicas a proporcionar voluntariamente un mecanismo para que las autoridades gubernamentales revisen las comunicaciones cifradas cuando investigan amenazas delictivas y terroristas.]]></description>
+        </item>
     </channel>
 </rss>
